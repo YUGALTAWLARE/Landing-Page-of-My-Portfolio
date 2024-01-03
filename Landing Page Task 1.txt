@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Page Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        scroll-behavior: smooth;
+    }
+
+    .section-land {
+        color: white;
+        padding: 100px; /* Adjusted padding for better responsiveness */
+        background-image: url('https://t4.ftcdn.net/jpg/05/71/83/47/360_F_571834789_ujYbUnH190iUokdDhZq7GXeTBRgqYVwa.jpg');
+        background-size: cover;
+        height: 100vh; /* Using viewport height for full-screen effect */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ml3 {
+        font-weight: 900;
+        font-size: 3.5em;
+        text-align: center; /* Center the text */
+        text-decoration: underline;
+        margin-top: 150px;
+    }
+
+    .container {
+        max-width: 1200px; /* Adjusted container max-width for better responsiveness */
+    }
+
+    img {
+        max-width: 100%; /* Make sure the image is responsive within its container */
+        height: auto;
+        transition: transform 0.9s ease; /* Added transition property for smooth rotation effect */
+
+    }
+
+    button{
+        background-color: wheat;
+        color: red;
+        padding: 25px;
+        margin-bottom: 88px;
+        font-weight: bold;
+    }
+
+    img:hover{
+        transform: rotate(-360deg); /* Rotate image by 90 degrees on hover */
+
+    }
+
+
+    .skills-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.skills-table th, .skills-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.skills-table th {
+    background-color: #f2f2f2;
+}
+
+.skills-content {
+    padding: 20px;
+}
+
+</style>
+<body>
+    <nav class="mainNav">
+        <!-- <div> <img src="1.png" class="profile-logo" alt="..." height="200px">
+        </div> -->
+
+        <ul>
+            <li><a href="#intro">Introduction</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="section-land">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1 class="ml3">
+                        Yugal S. Tawlare
+                    </h1> <br><br><br>
+                    <center>
+                        <a class="btn btn-success" href="#intro"> Explore Now</a>
+
+                    </center>
+                </div>
+                <div class="col-md-6">
+                    <img src="1.png" alt="Image Description">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr style="color: black; border: 2px solid black; margin: 0%;">
+
+    <header id="intro">
+        <div class="header-content">
+            <h1>Yugal S.Tawlare</h1>
+            <p>Full Stack java Web Developer | Creative Thinker</p>
+        </div>
+    </header>
+
+    <hr style="color: black; border: 2px solid black; margin: 0%;">
+
+    <section id="Eduction" class="Eduction-section">
+        <div>
+            <h2>Eduction</h2>
+            <div>
+                <h3>Prof. Ram Meghe Institute of Technology and Research, Badnera</h3>
+                <p>CGPA : 7.12</p>
+            </div>
+        </div>
+    </section>
+    <section id="projects" class="projects-section cotainer">
+        <div class="projects-content">
+            <h2>Projects</h2>
+            <div class="project-item">
+                <h3>Indian Sign Language Recognition Using Neural Network</h3>
+                <p>Addressing the communication gap faced by the speech and hearing-impaired community, the project
+                    aimed to develop an effective solution for Indian Sign Language (ISL) recognition. The challenge
+                    involved converting complex hand gestures into meaningful text messages for improved interaction.
+                    Leveraging advanced technologies, the project utilized Convolutional Neural Networks (CNN) to
+                    accurately interpret ISL alphabets. Key components included image processing techniques for hand
+                    segmentation, feature extraction for gesture analysis, and real-time prediction capabilities. The goal was
+                    to create an accessible communication tool, bridging the gap between individuals who use ISL and those
+                    who rely on conventional communication methods.</p>
+                    <a href="https://github.com/YUGALTAWLARE/Project-1-Indian-Sign-Language" target="_blank">View Project</a>
+            </div>
+
+            <div class="project-item">
+                <h3>YUGAL's Portfolio</h3>
+                <p>Here I have Created the Basic Landing Page Project of My Portfolio.</p>
+                <a href="project2.html">View Project</a>
+            </div>
+            <!-- Add more project items as needed -->
+        </div>
+    </section>
+
+    <hr style="color: black; border: 2px solid black; margin: 0%;">
+
+    <section id="skills" class="skills-section ">
+        <div class="skills-content">
+            <h2>Skills</h2>
+    
+            <table class="skills-table">
+                <tr>
+                    <th>Technology</th>
+                    <th>Skill Level</th>
+                </tr>
+                <tr>
+                    <td>HTML5</td>
+                    <td>⭐⭐⭐⭐⭐</td>
+                </tr>
+                <tr>
+                    <td>CSS3</td>
+                    <td>⭐⭐⭐⭐</td>
+                </tr>
+                <tr>
+                    <td>JavaScript</td>
+                    <td>⭐⭐⭐</td>
+                </tr>
+                <tr>
+                    <td>Java Lang</td>
+                    <td>⭐⭐⭐⭐</td>
+                </tr>
+                <tr>
+                    <td>Responsive Design</td>
+                    <td>⭐⭐⭐⭐⭐</td>
+                </tr>
+                <!-- Add more skills as needed -->
+            </table>
+        </div>
+    </section>
+        
+
+    <hr style="color: black; border: 2px solid black; margin: 0%;">
+
+    <div class="row">
+        <div class="col-md-6">
+            <section id="contact" class="contact-section" style="background-image: url('2.jpg'); background-repeat: no-repeat;background-size: cover;color: white;text-align: center;">
+                <div class="contact-content">
+                    <h2>Contact Me</h2>
+                    <p>Interested in working together? Let's connect!</p>
+                    <form id="contact-form" onsubmit="showAlert(event)">
+                        <label for="name">Your Name:</label>
+                        <input type="text" id="name" name="name" required>
+        
+                        <label for="email">Your Email:</label>
+                        <input type="email" id="email" name="email" required>
+        
+                        <textarea id="message" name="message" placeholder="Your Message" rows="4" required></textarea>
+        
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+        <div class="col-md-6" style="background-color: black;">
+            <center>
+                <img src="1.png" class="img-fluid imgrr" alt="" style="height: 525px; align-items: center;align-self:center;padding: 0;margin: 0;">
+            </center>
+        </div>
+    </div>
+   
+
+    <hr style="color: #00e9bf; border: 2px solid #00e9bf; margin: 0%;">
+
+    <footer>
+        <p>&copy; 2023 Yugal S.Tawlare. All rights reserved.</p>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <script>
+        // Wrap every letter in a span
+        var textWrapper = document.querySelector('.ml3');
+        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+        anime.timeline({loop: true})
+          .add({
+            targets: '.ml3 .letter',
+            opacity: [0,1],
+            easing: "easeInOutQuad",
+            duration: 2250,
+            delay: (el, i) => 150 * (i+1)
+          }).add({
+            targets: '.ml3',
+            opacity: 0,
+            duration: 1000,
+            easing: "easeOutExpo",
+            delay: 1000
+          });
+    </script>
+    <script>
+        function showAlert(event) {
+            event.preventDefault(); // Prevents the form from actually submitting
+    
+            // Get form data
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var message = document.getElementById('message').value;
+    
+            // Display alert with form data
+            alert('Form submitted!\nName: ' + name + '\nEmail: ' + email + '\nMessage: ' + message);
+        }
+    </script>r̥
+</body>
+</html>
